@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true">
+
+    <testsuites>
+        <testsuite name="Flash Sale API">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <!-- Override these via environment variables or phpunit.xml.local -->
+        <env name="DB_HOST"     value="localhost"/>
+        <env name="DB_PORT"     value="3306"/>
+        <env name="DB_NAME"     value="flash_sale_test"/>
+        <env name="DB_USER"     value="root"/>
+        <env name="DB_PASSWORD" value=""/>
+        <!-- Base URL of a running instance (used in the race-condition test) -->
+        <env name="API_BASE_URL" value="http://localhost:8000"/>
+    </php>
+
+</phpunit>

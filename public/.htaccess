@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Redirect everything to the front controller, except actual files/dirs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

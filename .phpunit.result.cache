@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"Tests\\RaceConditionTest::it_prevents_overselling_during_a_flash_sale":0.465,"Tests\\RaceConditionTest::it_rejects_an_order_with_no_items":0.019,"Tests\\RaceConditionTest::it_rejects_an_order_for_a_nonexistent_product":0.02,"Tests\\RaceConditionTest::it_rejects_an_order_exceeding_available_inventory":0.038}}
